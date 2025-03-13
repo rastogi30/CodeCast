@@ -25,6 +25,12 @@ export const TIME_SLOTS = [
   "16:00",
   "16:30",
   "17:00",
+  "17:30",
+  "18:00",
+  "18:30",
+  "19:00",
+  "19:30",
+  "20:00",
 ];
 
 export const QUICK_ACTIONS = [
@@ -89,6 +95,13 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      cpp: `#include <vector>
+using namespace std;
+
+vector<int> twoSum(vector<int>& nums, int target) {
+    // Write your solution here
+    return {};
+}`
     },
     constraints: [
       "2 ≤ nums.length ≤ 104",
@@ -126,6 +139,12 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      cpp: `#include <vector>
+using namespace std;
+
+void reverseString(vector<char>& s) {
+    // Write your solution here
+}`
     },
   },
   {
@@ -160,6 +179,13 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      cpp: `#include <iostream>
+using namespace std;
+
+bool isPalindrome(int x) {
+    // Write your solution here
+    return false;
+}`
     },
   },
 ];
@@ -168,7 +194,9 @@ export const LANGUAGES = [
   { id: "javascript", name: "JavaScript", icon: "/javascript.png" },
   { id: "python", name: "Python", icon: "/python.png" },
   { id: "java", name: "Java", icon: "/java.png" },
+  { id: "cpp", name: "C++", icon: "/cpp.png" }
 ] as const;
+
 
 export interface CodeQuestion {
   id: string;
